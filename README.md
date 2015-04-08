@@ -24,9 +24,11 @@ Template.y.rendered ...
 
 BTW We've tried iron-router events:
 
-onRun
-onBeforeAction
-onAfterAction
+    onRun
+
+    onBeforeAction
+
+    onAfterAction
 
 All of these seem to happen before the route's template content is present. I noticed that onBeforeAction required a call to next() to go on, I even tried looking for the DOM content after the next call.
 
