@@ -7,13 +7,17 @@ see here: http://meteortabsissue.meteor.com
 From reading the docs: this should initialize everything the sub-templates require:
 
 Template.layout.rendered = function(){
+
  	 $('ul.tabs').tabs()
+ 	 
 	}
+
 }
 
 However, this only works on a hard page refresh, and not with links routing the views.
 
 So instead you would have to initialize on each template that element will be used
+
 Template.x.rendered ...
 
 Template.y.rendered ...
