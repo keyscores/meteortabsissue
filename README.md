@@ -1,5 +1,4 @@
-# meteortabsissue
-Component initialization with Iron Router, Jquery, Materialize
+# Component initialization with Iron Router, Jquery, Materialize
 
 Materialize needs jquery components to be initialized on DOM ready. Finding a way to initialize components on all views is tricky.
 
