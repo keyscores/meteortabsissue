@@ -2,23 +2,20 @@
   <title>tabissue</title>
 </head>
 
-<template name="Layout">
+<template name="layout">
   <div class="container">
   <h1> Meteor </h1>
-  
+  	<a href={{ pathFor 'ideal' }} class="btn">Go to 'ideal' route</a>
+ 	<a href={{ pathFor 'notIdeal' }} class="btn">Go to 'notIdeal' route</a>
     {{> yield}}
   </div>
 </template>
 
 
-<template name="home">
-  <a href={{ pathFor 'about' }} class="btn">Go to 'about' route with the tabs</a>
-  <a href={{ pathFor 'about' }} class="btn">Go to 'other' route with the tabs</a>
 
-</template>
-
-
-<template name="about">
+<template name="ideal">
+ <p>Just using Template.layout.rendered doesn't work navigating between views. The component will not initialize.</p>
+ <p>It will work if you refresh the browser</p>
   <div class="row">
     <div class="col s12">
       <ul class="tabs">
@@ -35,7 +32,9 @@
   </div>
 </template>
 
-<template name="other">
+<template name="notIdeal">
+<p>Below is how the tabs look correctly.</p>
+<p>Template.oranges.rendered will make this work, but that means having a helper for every view.</p>
   <div class="row">
     <div class="col s12">
       <ul class="tabs">
