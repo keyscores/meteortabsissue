@@ -6,13 +6,13 @@ see here: http://meteortabsissue.meteor.com
 
 From reading the docs: this should initialize everything the sub-templates require:
 
-Template.layout.rendered = function(){
+	Template.layout.rendered = function(){
 
- 	 $('ul.tabs').tabs()
+ 		 $('ul.tabs').tabs()
  	 
-	}
+		}
 
-}
+	}
 
 However, this only works on a hard page refresh, and not with links routing the views.
 
