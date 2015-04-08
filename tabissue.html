@@ -7,13 +7,16 @@
   <h1> Meteor </h1>
   	<a href={{ pathFor 'ideal' }} class="btn">Go to 'ideal' route</a>
  	<a href={{ pathFor 'notIdeal' }} class="btn">Go to 'notIdeal' route</a>
+    <body>
     {{> yield}}
+    </body>
   </div>
 </template>
 
 
 
 <template name="ideal">
+
  <p>Just using Template.layout.rendered doesn't work navigating between views. The component will not initialize.</p>
  <p>It will work if you refresh the browser</p>
   <div class="row">
@@ -30,6 +33,7 @@
     <div id="test3" class="col s12">Test 3</div>
     <div id="test4" class="col s12">Test 4</div>
   </div>
+
 </template>
 
 <template name="notIdeal">
